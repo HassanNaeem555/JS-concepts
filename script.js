@@ -3,8 +3,9 @@ function calculateTax(price, tax, description) {
   description = description ?? "Default Item";
   const total = price * (1 + tax);
   console.log(
-    `%c${description} With Tax: $${total}`,
-    "font-weight:900;color:#fff;background-color:gray;padding:15px;"
+    `%c${description} With Tax:%c $${total}`,
+    "font-weight:900;",
+    "font-weight:900;color:green;"
   );
 }
 calculateTax(100, 2, "My item");
